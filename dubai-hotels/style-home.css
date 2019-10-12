@@ -1,0 +1,783 @@
+body {
+  background-color: white;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+
+/*----------------------------HEADER----------------------------*/
+header {                     /* <--- styling header */
+  background: linear-gradient(173deg, rgba(37,37,37,1) 0%, rgba(65,57,57,1) 50%);
+  width: 100%;
+  height: 130px;
+  box-sizing: border-box;
+}
+#header-container {          /* <--- container for header items (logo, phone, email) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: gray;
+  font-size: 15px;
+}
+#logo {                      /* <--- header logo */
+  background-image: url(images/logo.png);
+  height: 130px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.header-phone {              /* <--- phone email */
+  width: 300px;
+  text-align: center;
+}
+.header-email {              /* <--- header email */
+  width: 300px;
+  text-align: center;
+}
+
+/*----------------------------NAVIGATION----------------------------*/
+.main-nav {
+  background-color: #252525;
+  width: 100%;
+  height: 50px;
+}
+.nav-content {      /* <--- styling container for menu items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+  width: 840px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-content ul {   /* <--- styling list for menu items */
+  padding: 0px;
+  color: white;
+}
+.nav-content li {   /* <--- styling list for menu items */
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 5px;
+  border-right: 1px solid #d3a452;
+}
+.nav-content a {
+  padding: 11px;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+.nav-content a:hover {
+  background-color: #454141;
+  transition: 0.25s;
+}
+.active {         /* <--- active link in menu */
+  border-bottom: 3px solid #d3a452;
+}
+
+/*----------------------------MAIN CONTENT----------------------------*/
+.main-content {          /* <--- walpaper */
+  position: relative;
+  background-image: url(images/main-wallpaper.jpg);
+  background-size:  100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: 450px;
+}
+.registration-box {      /* <--- container for form and weather box */
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  height: 130px;
+  width: 800px;
+  bottom: 50px;
+  left: 13%;
+}
+.registration-box h2, h3, select {
+  font-weight: 500;
+  font-family: "Barlow Condensed";
+  color: #574317;
+}
+.registration-box select {
+  border: 1px solid #d2a550;
+}
+.registration-box select, input[type=submit] {
+  font-weight: 600;
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+}
+.registration-box input[type=submit] {
+  background-color: #e6bf4c;
+  border: none;
+  padding: 3px 25px 3px 25px;
+  margin-left: -20px;
+  color: #2b2a26;
+}
+.registration-box input[type=submit]:hover {
+  background-color: #D39B38;
+  transition: 0.25s;
+}
+.registration-form {      /* <--- check availability form */
+  background-color: rgba(245,243,237,0.9);
+  height: 100%;
+  width: 600px;
+  float: left;
+  line-height: 10px;
+  box-sizing: border-box;
+}
+.form-positioning-1 {     /* <--- part 1, check in date */
+  width: 35%;
+  display: inline-block;
+  padding-left: 25px;
+  position: relative;
+  box-sizing: border-box;
+}
+.form-positioning-2 {     /* <--- part 2, check out date */
+  width: 35%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.form-positioning-3 {     /* <--- part 3, submit button */
+  display: inline-block;
+  box-sizing: border-box;
+}
+.weather-box {            /* <--- weather box styling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 16%;
+  float: right;
+}
+
+/*----------------------------SECTION 1----------------------------*/
+.section-1 {              /* <--- section 1 container */
+  width: 100%;
+  height: 500px;
+}
+.section-1-left {         /* <--- styling left section */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.section-1-left div {
+  background-image: url(images/burj-al-arab.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
+  width: 100%;
+  height: 65%;
+}
+.section-1-right {       /* <--- styling right section */
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  float: right;
+  padding: 0px 0px 0px 25px;
+}
+.section-1-right div {
+  width: 380px;
+  text-align: justify;
+}
+.section-1-right h1 {    /* <--- heading text color and size */
+  font-weight: 400;
+  font-size: 26px;
+  color: #d3a452;
+  margin-bottom: 24px;
+}
+
+/*----------------------------SECTION 2----------------------------*/
+.section-2 {             /* <--- section 2 container */
+  width: 100%;
+  height: 500px;
+}
+.section-2-right {       /* <--- styling right section */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+.section-2-right div {
+  background-image: url(images/burj-khalifa.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  width: 100%;
+  height: 65%;
+}
+.section-2-left {      /* <--- styling left section */
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 0px 25px 0px 0px;
+}
+.section-2-left div {
+  width: 380px;
+  text-align: justify;
+  float: right;
+}
+.section-2-left h1 {    /* <--- heading text color and size */
+  font-weight: 400;
+  font-size: 26px;
+  color: #d3a452;
+  margin-bottom: 24px;
+}
+
+/*----------------------------SECTION 3----------------------------*/
+.section-3 {            /* <--- section 3 container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(233,233,233,1) 0%, rgba(167,167,146,1) 100%);
+  height: 380px;
+  width: 100%;
+  padding-top: 30px;
+}
+.review {             /* <--- review container size and position */
+  position: relative;
+  height: 100%;
+  width: 450px;
+}
+.picture {            /* <--- picture styling */
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+.picture-personal-1 {    /* <--- UNIQUE (first) REVIEWER PHOTO */
+  background-image: url(images/lele-pons.jpg);
+}
+.picture-personal-1:hover {
+  box-shadow:  0 0 8px 4px rgba(0,0,0,0.6);
+  transition: 0.2s;
+}
+.picture-personal-2 {    /* <--- UNIQUE (second) REVIEWER PHOTO */
+  background-image: url(images/sheikh.jpg);
+}
+.picture-personal-2:hover {
+  box-shadow:  0 0 8px 4px rgba(0,0,0,0.6);
+  transition: 0.2s;
+}
+.name {               /* <--- name styling */
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+  font-size: 23px;
+  padding-left: 30px;
+}
+.comment {           /* <--- comment styling */
+  padding: 0px 5px 0px 5px;
+  font-size: 15px;
+  width: 85%;
+}
+.rating {           /* <--- rating container */
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  padding-left: 5px;
+  bottom: 15px;
+  right: 0;
+}
+
+/*----------------------------stars----------------------------*/
+.full-star {        /* <--- whole (solid) star */
+  display: inline-block;
+  background-image: url(images/full-star.png);
+  height: 50px;
+  width: 50px;
+  
+}
+.star {             /* <--- empty (bad) star */
+  display: inline-block;
+  background-image: url(images/star.png);
+  height: 50px;
+  width: 50px;
+}
+
+/*----------------------------FOOTER----------------------------*/
+.main-footer {      /* <--- footer container */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background: linear-gradient(173deg, rgba(37,37,37,1) 0%, rgba(65,57,57,1) 50%);
+  width: 100%;
+  padding-bottom: 50px;
+}
+.footer-column {    /* <--- footer column size */
+  height: 100%;
+  width: 220px; 
+}
+.footer-heading {   /* <--- footer heading style */
+  font-weight: 400;
+  font-size: 26px;
+  color: #d3a452;
+}
+.footer-column p {  /* <--- footer column text color */
+  color: white;
+}
+.contact-icon {     /* <--- contact icon styling */
+  height: 25px;
+  margin-bottom: -8px;
+  padding-right: 5px;
+}
+
+/*----------------------------MEDIA RULE 1050px----------------------------*/
+@media (max-width: 1050px) {     /* <--- MINOR ADJUSTMENTS */
+  .registration-box {     /* <--- move input box */
+    width: 750px;
+    left: 6%;
+  }
+  .review {               /* <--- change width of review */
+    width: 400px;
+  }
+  .main-footer {          /* <--- style items inside footer container */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/*----------------------------MEDIA RULE 900px----------------------------*/
+@media (max-width: 900px) {
+
+  /*------##########Navigation##########------*/
+  .main-nav {             /* <--- menu transition size */
+    height: 100px;
+  }
+  .nav-content {          /* <--- menu transition from 1 row to 2 rows */
+    display: flex;
+    width: 500px;
+    height: 100px;
+  }
+  .nav-content ul {       /* <--- menu transition from 1 row to 2 rows */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-content li {       /* <--- menu transition from 1 row to 2 rows */
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .nav-content a {
+    margin-left: 4px;
+  }
+  .mediarule2 {           /* <--- removing right gold border of item */
+    border-right: none !important;
+  }
+  
+  /*------##########Check availability form##########------*/
+  .registration-box {     /* <--- minor reposition */
+    width: 550px;
+    left: 4%;
+  }
+  .registration-form {    /* <--- minor resizing */
+    width: 600px;
+  }
+  
+  /*------##########Weather box##########------*/
+  .weather-box {          /* <--- weather box reposition */
+    position: absolute;
+    left: 18px;
+    bottom: 140px;
+  }
+  
+  /*------##########First section##########------*/
+  .section-1-left {       /* <--- minor resizing */
+    width: 55%; 
+  }
+  .section-1-left div {   /* <--- minor enlargement */
+    background-size: 120%;
+    background-position: 50% 80%;
+  }
+  .section-1-right {      /* <--- minor resizing */
+    width: 45%;
+    font-size: 14px;
+  }
+  .section-1-right div {  /* <--- minor resizing */
+    width: 270px;
+  }
+  
+  /*------##########Second section##########------*/
+  .section-2-right {      /* <--- minor resizing */
+    width: 55%; 
+  }
+  .section-2-right div {  /* <--- minor enlargement */
+    background-size: 140%;
+  }
+  .section-2-left {       /* <--- minor resizing */
+    width: 45%;
+    font-size: 14px;
+  }
+  .section-2-left div {   /* <--- minor resizing */
+    width: 270px;
+  }
+  
+  /*------##########Third section##########------*/
+  .section-3 {            /* <--- minor resizing */
+    height: 550px;
+  }
+  .review {               /* <--- minor resizing */
+    width: 300px;
+    height: 550px;
+  }
+  .main-footer {          /* <--- minor resizing */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/*------##########Checkbox for hamburger menu##########------*/
+input[type=checkbox] {    /* <--- checkbox for rasponsive menu */
+  display: none;
+  position:absolute;
+  right: 400px;
+  top: 200px;
+}
+
+/*----------------------------MEDIA RULE 680px----------------------------*/
+@media (max-width:680px) {     /* <--- removing email info from header */
+  .header-email {
+    display: none;
+  }
+  
+  /*-------------STYLING and transforming hamburger menu from here to ...-------------*/
+  .main-nav .menu-btn {        /* <--- checkbox act as action for click and it is invisible */
+    display: block;
+    background-color: red;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    z-index: 5;
+    opacity: 0;
+  }
+  .navicon {                   /* <--- 2/3 lines of hamburger menu */
+    height: 4px;
+    width: 50px;
+    background-color: #d3a452;
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 25px;
+    z-index: 15;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .navicon:before {            /* <--- 1/3 lines of hamburger menu */
+    height: 4px;
+    width: 50px;
+    background-color: #d3a452;
+    display: block;
+    position: absolute;
+    right: 0px;
+    content:'';
+    z-index: 14;
+    top: -10px;
+    transition: all 0.3s ease-out;
+    transform: rotate(0deg);
+  }
+  .navicon:after {             /* <--- 3/3 lines of hamburger menu */
+    height: 4px;
+    width: 50px;
+    background-color: #d3a452;
+    display: block;
+    position: absolute;
+    right: 0px;
+    content:'';
+    z-index: 14;
+    top: 10px;
+    transition: all 0.3s ease-out;
+    transform: rotate(0deg);
+  }
+  .main-nav {                   /* <--- black bar styling */
+    background-color: #252525;
+    width: 100%;
+    height: 50px;
+    position:absolute;
+    right: 0;
+    z-index: 6;
+  }
+  .nav-content {                 /* <--- animation when menu is clicked to show */
+    transition: height 0.3s ease-in-out;
+    display: block;
+    background-color: #252525;
+    width: 60%;
+    width: 210px;
+    height: 0px;
+    margin-right: 0;
+    position: relative;
+    overflow: hidden;
+    top: 50px;
+  }
+  .nav-content ul {              /* <--- menu items styling */
+    display: block;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+  }
+  .nav-content li {              /* <--- menu items styling */
+    display: block;
+    border-right: none;
+    border-bottom: 1px solid #d3a452;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: right;
+  }
+  .nav-content a {               /* <--- menu items styling */
+    padding: 4px 4px 1px 4px;
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    
+  }
+  .nav-content a:hover {
+    background-color: transparent;
+    transition: 0s;
+  }
+    /* <--- when button is clicked, do this... */
+   .main-nav .menu-btn:checked ~ * .nav-content {
+     height: 220px;
+  }
+  .main-nav .menu-btn:checked + * .navicon {
+    background-color: transparent;
+  }
+  .main-nav .menu-btn:checked + * .navicon:before {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+  .main-nav .menu-btn:checked + * .navicon:after {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+  /*----------------------------... to here----------------------------*/
+  
+  /*------##########Wallpaper##########------*/
+  .main-content {              /* <--- minor resizing */
+    background-size: 130%;
+  }
+  
+  /*------##########Check availability form##########------*/
+  .registration-box {          /* <--- moving and resizing */
+    height: 310px;
+    width: 100%;
+    left: 0;
+  }
+  .registration-form {         /* <--- changing form shape from horizontal to vertical */
+    position: relative;
+    width: 230px;
+    left: 50%;
+    margin-left: -115px;
+    z-index: 5;
+  }
+  .form-positioning-1 {        /* <--- changing form shape from horizontal to vertical */
+    display: block;
+    width: 80%;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-positioning-2 {        /* <--- changing form shape from horizontal to vertical */
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    margin-top: 0px
+  }
+  .form-positioning-3 {        /* <--- changing form shape from horizontal to vertical */
+    display: block;
+    width: 63%;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .registration-box input[type=submit] {  /* <--- full width Check availability button */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*------##########Weather box##########------*/
+  .weather-box {               /* <--- moving and resizing weather box */
+    display: block;
+    width: 125px;
+    height: 125px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /*------##########First section##########------*/
+  .section-1 {                 /* <--- stacking items vertically instead horizontaly */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    position: relative;
+    height: auto;
+  }
+  .section-1-left {            /* <--- resizing right part to become top part */
+    width: 100%;
+    height: 350px;
+  }
+  .section-1-left div {        /* <--- picture enlargement */
+    background-size: 120%;
+  }
+  .section-1-right {           /* <--- expanding paragraph to full width */
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+  }
+  .section-1-right div {       /* <--- styling text */
+    width: 95%;
+  }
+  
+  /*------##########Second section##########------*/
+  .section-2 {                 /* <--- stacking items vertically instead horizontaly */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    position: relative;
+    height: auto;
+  }
+  .section-2-right {           /* <--- resizing left part to become top part */
+    width: 100%;
+    height: 350px; 
+  }
+  .section-2-right div {       /* <--- picture enlargement */
+    background-size: 140%;
+  }
+  .section-2-left {            /* <--- expanding paragraph to full width */
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+  }
+  .section-2-left div {        /* <--- styling text */
+    width: 95%;
+  }
+  
+  /*------##########Third section##########------*/
+  .section-3 {                 /* <--- stacking items vertically instead horizontaly */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+  }
+  /*------##########Review container##########------*/
+  .review {                    /* <--- resizing review container */
+    min-width: 282px;
+    width: 80%;
+  }
+  .picture {                   /* <--- reducing size of thumbnails for mobile devices */
+    height: 80px;
+    width: 80px;
+  }
+  .name {                      /* <--- reducing font size for mobile devices */
+    font-size: 20px;
+    width: 140px;
+  }
+  .comment {                   /* <--- comment is set to full width and font size is reduced */
+    width: 100%;
+    font-size: 13px;
+  }
+}
+/*----------------------------MEDIA RULE 480px----------------------------*/
+@media (max-width: 480px) {    /* <--- removing phone info from header */
+  .header-phone {              
+    display: none;
+  }
+  /*------##########Navigation##########------*/
+  .navicon {                   /* <--- styling hamburger menu icon to be more slim */
+    height: 3px;
+    width: 40px;
+  }
+  .navicon:before {            /* <--- styling hamburger menu icon to be more slim */
+    height: 3px;
+    width: 40px;
+  }
+  .navicon:after {             /* <--- styling hamburger menu icon to be more slim */
+    height: 3px;
+    width: 40px;
+  }
+  
+  /*------##########Wallpaper##########------*/
+  .main-content {              /* <--- wallpaper enlargement */
+    background-size: 200%;
+  }
+  
+  /*------##########Weather box##########------*/
+  .weather-box {               /* <--- removing weather box */
+    display: none;
+  }
+  
+  /*------##########First section##########------*/
+  .section-1-right {           /* <--- reducing font size for mobile devices */
+    font-size: 13px;
+  }
+  .section-1-right h1 {        /* <--- reducing font size and aligning header text to left */
+    font-size: 22px;
+    text-align: left;
+  }
+  
+  /*------##########Second section##########------*/
+  .section-2-left {            /* <--- reducing font size for mobile devices */
+    font-size: 13px;
+  }
+  .section-2-left h1 {         /* <--- reducing font size and aligning header text to left */
+    font-size: 22px;
+    text-align: left;
+  }
+  .section-2-right div {       /* <--- picture enlargement */
+    background-size: 160%;
+  }
+  
+  /*------##########Third section##########------*/
+  .section-3 {                 /* <--- slightly changing height of container for reviews */
+    height: 700px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

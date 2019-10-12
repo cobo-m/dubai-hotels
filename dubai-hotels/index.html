@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dubai Hotels - Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="style-home.css" rel="stylesheet">
+  </head>
+  <body>
+<!-- ----------------------------HEADER---------------------------- -->
+    <header>
+      <div id="header-container">
+        <div id="logo"><a href="index.html"></a></div>        <!-- LOGO -->
+        <div class="header-phone">      <!-- PHONE CONTACT -->
+          <p><img class="contact-icon" src="images/phone-icon.png">Reservations: + 387 60 440 23 15</p>
+          <p>Info: + 387 60 440 23 15</p>
+        </div>
+        <div class="header-email">      <!-- EMAIL CONTACT -->
+          <p><img class="contact-icon" src="images/email-icon.png">Reservations: order@hotel.com</p>
+          <p>Info: contact@hotel.com</p>
+        </div>
+      </div>
+    </header>
+<!-- ----------------------------NAVIGATION---------------------------- -->
+    <nav class="main-nav">
+      <div class="menu-btn"></div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span>
+      <div class="nav-content" role="custom-dropdown">
+        <ul class="menu">                                      <!-- TABS -->
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="#section-1">ACCOMODANTIONS</a></li>
+          <li class="mediarule2"><a href="package-and-specials.html">PACKAGE & SPECIALS</a></li>
+          <li><a href="bar.html">BAR</a></li>
+          <li><a href="special-events.html">SPECIAL EVENTS</a></li>
+          <li style="border-right:none"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+<!-- ----------------------------MAIN CONTENT, WALLPAPER---------------------------- -->
+    <main class="main-content">                  <!-- CONTAINER, WALLPAPER -->
+      <div class="registration-box">
+        <div class="registration-form">          <!-- CHECK AVAILABILITY FORM -->
+          <form id="submit-form" action="#">
+            <div class="form-positioning-1">     <!-- PART 1, CHECK IN DATE (FORM IS DIVIDED INTO 3 PARTS) -->    
+              <h2>Check availability</h2>
+              <h3>Check in date</h3>
+              <select name="month-1">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+              <select name="day-1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select name="year-1">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2020">2021</option>
+              </select>
+            </div>
+            <div class="form-positioning-2">        <!-- PART 2, CHECK OUT DATE -->
+              <h3>Check out date</h3>
+              <select name="month-2">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+              <select name="day-2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select name="year-2">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2020">2021</option>
+              </select>
+            </div>
+            <div class="form-positioning-3">           <!-- PART 3, SUBMIT BUTTON -->
+            <input type="submit" value="Check availability">
+            </div>
+          </form>
+        </div>
+        <div class="weather-box">                      <!-- CURRENT WEATHER FOR ZENICA -->
+         <a target="_blank" href="https://www.booked.net/weather/zenica-41532"><img src="https://w.bookcdn.com/weather/picture/28_41532_1_1_95a5a6_250_7f8c8d_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=33593"  alt="booked.net"/></a>
+        </div>
+      </div>
+    </main>
+<!-- ----------------------------FIRST SECTION---------------------------- -->
+    <section class="section-1" id="section-1">
+      <div class="section-1-left">        <!-- LEFT SECTION, PICTURE (IT IS DIVIDED INTO 2 PARTS) -->
+        <div></div>
+      </div>
+      <div class="section-1-right">       <!-- RIGHT SECTION, PARAGRAPH-->
+        <div>
+          <h1>Rest at Burj Al Arab Jumeirah</h1>
+          <p>The iconic sail-shaped silhoutte of Burj Al Arab Jumeirah stands tall as a beacon of modern Dubai, characterized by the finest hospitality you can ever experience.
+             Repeatedly voted the world's most luxurious hotel, this stunning destination offers you the finest service and experiences throughout - right down to an optional 
+            chauffeur-driven Rolls-Royce, private beach access, a breathtaking terrace with pools and cabanas as well as some of the world’s best dining venues, including the highly acclaimed Al Mahara.
+          Dubai is the perfect sandbox for big events – a place where ideas can breathe, and creative expression is unbounded. It’s here that tradition and futurism twist together in a soaring ascension of metal and glass.</p>
+        </div>
+      </div>
+    </section>
+<!-- ----------------------------SECOND SECTION---------------------------- -->
+    <section class="section-2">
+      <div class="section-2-right">       <!-- RIGHT SECTION, PICTURE (IT IS DIVIDED INTO 2 PARTS) -->
+        <div></div>
+      </div>
+      <div class="section-2-left">        <!-- LEFT SECTION, PARAGRAPH -->
+        <div>
+          <h1>Visit Burj Khalifa</h1>
+          <p>World's tallest building. A living wonder. Stunning work of art. Incomparable feat of engineering. Burj Khalifa is all that. In concept and execution, Burj Khalifa has no peer.
+             More than just the world's tallest building, Burj Khalifa is an unprecedented example of international cooperation, symbolic beacon of progress, and an emblem of the new, dynamic and prosperous Middle East. It is also tangible proof of Dubai's growing role in a changing world. In fewer than 30 years, this city has transformed itself from a regional centre to a global one. This success was not based on oil reserves, but on reserves of human talent, ingenuity and initiative. Burj Khalifa embodies that vision.
+          Emaar had but one inspiration, who inspires us to reach for the stars.</p>
+        </div>
+      </div>
+    </section>
+<!-- ----------------------------THIRD SECTION (REVIEWS)---------------------------- -->
+    <section class="section-3">
+      <div class="review">                <!-- LEFT (FIRST) REVIEW -->
+        <div class="picture picture-personal-1">   <!-- PICTURE OF REVIEWER -->
+        </div>
+        <div class="name">                <!-- NAME OF REVIEWER -->
+          <h3>Lele Pons</h3>
+        </div>
+        <div class="comment">             <!-- COMMENT OF REVIEWER -->
+          <p>I've seen better...By the time the Vine platform was shut down in 2016, Pons had received billions loops marking her the most looped and most followed Viner on the platform.
+          She also runs a self-titled YouTube channel which boasts of more than 14 million total subscribers. Her Instagram profile is also extremely popular with more than 35.3 million total fans.</p>
+        </div>
+        <div class="rating">              <!-- RATING OF REVIEWER -->
+          <div class="full-star"></div>
+          <div class="full-star"></div>
+          <div class="full-star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+      </div>
+      <div class="review">                <!-- RIGHT (SECOND) REVIEW -->
+        <div class="picture picture-personal-2">    <!-- PICTURE OF REVIEWER -->
+        </div>
+        <div class="name">                <!-- NAME OF REVIEWER -->
+          <h3>Sheikh</h3>
+        </div>
+        <div class="comment">             <!-- COMMENT OF REVIEWER -->
+          <p>I tottaly disagree with Lele. Dubai is the best city in the world. My Burj Khalifa is No1. As according to Wikipedia, sheikh (that's Me)
+            is an honorific title in the Arabic language. It commonly designates the ruler of a tribe or a royal family member, who inherited the title from his father. "Sheikh" is given to a royal male at birth and the related title "Sheikha" is given to a royal female at birth.</p>
+        </div>
+        <div class="rating">              <!-- RATING OF REVIEWER -->
+          <div class="full-star"></div>
+          <div class="full-star"></div>
+          <div class="full-star"></div>
+          <div class="full-star"></div>
+          <div class="full-star"></div>
+        </div>
+      </div>
+    </section>
+<!-- ----------------------------FOOTER---------------------------- -->
+    <footer>
+      <div class="main-footer">        <!-- FOOTER ITEMS CONTAINER -->
+        <div class="footer-column">    <!-- 1/4 (FIRST) COLUMNS -->
+          <div>
+            <h2 class="footer-heading">Info</h2>
+          </div>
+          <div>
+            <p>Our mails are:</p>
+          </div>
+          <div>
+            <p>order@hotel.com</p>
+          </div>
+          <div>
+            <p>contact@hotel.com</p>
+          </div>
+        </div>
+        <div class="footer-column">    <!-- 2/4 COLUMNS -->
+          <div>
+            <h2 class="footer-heading">FAQ</h2>
+          </div>
+          <div>
+            <p>Where are you located?</p>
+          </div>
+          <div>
+            <p><i>At Burj Khalifa basement.</i></p>
+          </div>
+          <div>
+            <p>Can I stay 1 night only?</p>
+          </div>
+          <div>
+            <p><i>No, 1 week minimum.</i></p>
+          </div>
+        </div>
+        <div class="footer-column">    <!-- 3/4 COLUMNS -->
+          <div>
+            <h2 class="footer-heading">My account</h2>
+          </div>
+          <div>
+            <p>To open account go to</p>
+          </div>
+          <div>
+            <p>contact page.</p>
+          </div>
+        </div>
+        <div class="footer-column">    <!-- 4/4 (LAST) COLUMNS -->
+          <div>
+            <h2 class="footer-heading" style="text-align:center; margin-left: -35px">Contact</h2>
+          </div>
+          <div>
+            <p><img class="contact-icon" src="images/location-icon.png">ZeForge Academy, Zenica</p>
+          </div>
+          <div>
+            <p><img class="contact-icon" src="images/phone-icon.png">+387 60 440 15 56</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- ----------------------------END OF FOOTER---------------------------- -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
